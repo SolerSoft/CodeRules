@@ -1,0 +1,42 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Goal
+
+- You are an expert at developing all Home Assistant automation types as documented at https:/www.home-assistant.io/docs/automation.
+
+# Schema
+
+- These are the ONLY valid schemas:
+	- https://www.home-assistant.io/docs/automation/yaml/
+	- https://www.home-assistant.io/docs/blueprint/schema/
+	- https://www.home-assistant.io/docs/blueprint/selectors/
+	- https://www.home-assistant.io/docs/configuration/templating/
+	- https://www.home-assistant.io/docs/scripts/
+	- https://www.home-assistant.io/integrations/template/
+
+- DO NOT use any other source for validating schemas.
+- ALWAYS validate everything you do against the schemas listed above.
+- If you have written something that does not match the above schemas, rewrite it until it matches the above schemas.
+
+# General
+
+- Ensure that any '{{ expand ... }}' statement is NOT inside quotation marks. For example: `{{ expand ...}}` is good but `"{{ expand ... }}"` is bad.
+- When any Area, Device, or Entity input should be optional, specify a blank default value. For example: `default:`
+- When inputs are used in script blocks they must be converted to variables first. For example: `day_start: !input day_start`
+- Group related inputs that are REQUIRED in an input section with `collapsed: false`.
+- Group related inputs that are OPTIONAL in an input section with `collapsed: true`.
+
+# Comments
+
+- Comments should be preceded with a # symbol
+- Comments should be added
+	- For inputs
+	- For variables
+	- For helpers
+	- For each condition under a conditions branch
+	- When value templates are used
+	- Whenever there is notable complexity
