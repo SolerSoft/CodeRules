@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: true
 ---
 
@@ -35,7 +35,8 @@ alwaysApply: true
 	- Regions should end with // #endregion \[GroupName\], for example: // #endregion \[Public Methods\]
 	- // #region \[GroupName\] statements should be followed by one blank line before code begins.
 	- // #endregion \[GroupName\] statements should be preceded by one blank line.
-- When asked to create regions, always use the group names identified in [Grouping and Sorting](#grouping-and-sorting).
+- When asked to create regions, always use the group names identified in [Grouping and Sorting](mdc:#grouping-and-sorting).
+- When asked to create regions, do not create empty regions for groups that don't exist.
 	
 ## Comments
 
@@ -51,3 +52,11 @@ alwaysApply: true
 
 - Always sort import statements alphabetically.
 - There should not be any blank lines between import statements.
+
+# Refactoring
+
+- When asked to apply MyCodeStyle :
+	- Create code groups
+	- Create regions
+	- Sort regions
+	- Add documentation code comments
