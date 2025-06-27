@@ -1,0 +1,25 @@
+---
+description: Comprehensive best practices for developing with Supabase, covering code organization, performance, security, testing, and common pitfalls. This rule provides actionable guidance for developers to build robust and scalable applications using Supabase.
+globs: *.js,*.jsx,*.ts,*.tsx,*.sql
+---
+# Supabase Best Practices: A Comprehensive Guide
+
+This document outlines best practices for developing with Supabase.
+
+## Database
+
+### Creation and Updtes
+Whenever creating or updating a database, always follow rules in @file ./create-db-functions.mdc
+
+### Migration
+Whenever generating migration scripts, always follow rules in @file ./create-migration.mdc
+
+### Security Policies
+Whenever security policies should be considered, always follow rules in @file ./create-rls-policies.mdc
+
+### SQL
+Whenever generating SQL statements, always follow rules in @file ./postgres-sql-style-guide.mdc
+
+## Edge Functions 
+
+Whenever writing edge functions, always follow rules in @file ./writing-supabase-edge-functions.mdc
