@@ -7,19 +7,7 @@ globs: *.js,*.jsx,*.ts,*.tsx,*.sql
 This document outlines best practices for developing with Supabase.
 
 ## Database
-
-### Creation and Updtes
-Whenever creating or updating a database, always follow rules in @file ./create-db-functions.mdc
-
-### Migration
-Whenever generating migration scripts, always follow rules in @file ./create-migration.mdc
-
-### Security Policies
-Whenever security policies should be considered, always follow rules in @file ./create-rls-policies.mdc
-
-### SQL
-Whenever generating SQL statements, always follow rules in @file ./postgres-sql-style-guide.mdc
+- Whenever interaction with the database is needed, always follow rules in @file ./Postgres.mdc
 
 ## Edge Functions 
-
-Whenever writing edge functions, always follow rules in @file ./writing-supabase-edge-functions.mdc
+- Whenever writing edge functions, always follow rules in @file ./supabase-edge-functions.mdc

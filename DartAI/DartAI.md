@@ -1,14 +1,19 @@
 ---
 description: Guidelines for working with Tasks and Subtasks when using Dart AI task manager.
+globs: 
 alwaysApply: false
 ---
 
-Always interact with Dart AI via MCP to understand learn about outstanding tasks and to verify the completion of a task and subtasks.
+Always interact with Dart AI via MCP to learn about outstanding tasks and to verify the completion of a task and subtasks.
 
-Always update task status from 'To-do' to 'Doing' when starting a task, and from 'Doing' to 'Done' when a task is complete.
+Always update task status from 'To-do' to 'Doing' when starting any task or subtask, and from 'Doing' to 'Done' when any task or subtask is complete.
 
-Update the description of a task when starting it to append new details about the execution plan.
+Whenever starting a task or subtask, always update the description and append information about your execution plan.
 
-Update the description again when a task is complete to append any differences between the execution plan and actual implementation.
+Whenever completing a task or subtask, always update the description and append any details about the actual work carried out and how it differed from the plan. If there were no changes to the plan, just append "Work carried out as planned".
 
 Don't create new tasks or subtasks without asking for confirmation to do so.
+
+Whenever asked to suggest the next task in a space, ALWAYS consider task complexity, dependencies and nesting when making a selection. Explain the reason for your recommendation and ask whether to begin working on it.
+
+Whenever any task or subtask is completed, ask whether to start a git commit, then automatically suggest the next task or subtask.
