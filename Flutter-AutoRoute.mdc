@@ -1,7 +1,6 @@
 ---
-description:
-globs:
-alwaysApply: true
+description: Best practices for workging with the AutoRoute navigation library.
+globs: *.dart
 ---
 
 # AutoRoute

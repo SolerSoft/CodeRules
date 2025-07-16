@@ -1,7 +1,6 @@
 ---
-description:
-globs:
-alwaysApply: true
+description: Best practices for working with Get-It service locator.
+globs: *.dart
 ---
 
 # GetIt

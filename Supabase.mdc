@@ -10,4 +10,4 @@ This document outlines best practices for developing with Supabase.
 - Whenever interaction with the database is needed, always follow rules in @file ./Postgres.mdc
 
 ## Edge Functions 
-- Whenever writing edge functions, always follow rules in @file ./supabase-edge-functions.mdc
+- Whenever writing edge functions, always follow rules in @file ./Supabase-Edge-Functions.mdc

@@ -1,6 +1,5 @@
 ---
-description: Guidelines for working with Tasks and Subtasks when using Dart AI task manager.
-globs: 
+description: Best practices for working with Tasks and Subtasks when using Dart AI task manager.
 alwaysApply: false
 ---
 

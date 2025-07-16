@@ -1,0 +1,11 @@
+---
+description: Best practices for using the Brick Offline First library.
+alwaysApply: false
+---
+
+# Brick API
+
+- When generating Brick code always use @file ./Context7.mdc to validate the syntax with the 'getdutchie/brick' library.
+
+# Code Generation
+- Whenever a Model class is added or changed, we must run 'dart run build_runner build' from within the Brick project. This generates Adapters and Client Migrations.

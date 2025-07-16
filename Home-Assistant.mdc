@@ -1,5 +1,5 @@
 ---
-description: 
+description: Best practices for extensions and scripts for Home Assistant.
 globs: 
 alwaysApply: true
 ---

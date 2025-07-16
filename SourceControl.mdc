@@ -1,6 +1,5 @@
 ---
-description:
-globs: 
+description: Guidelines for managing source control with Git.
 alwaysApply: true
 ---
 

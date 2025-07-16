@@ -18,13 +18,13 @@ This document outlines best practices for co-developing with PostgreSQL.
 ## Database
 
 ### Functions
-- Whenever creating or updating database functions, always follow rules in @file ./postgres-functions.mdc
+- Whenever creating or updating database functions, always follow rules in @file ./Postgres-Functions.mdc
 
 ### Migrations
-- Whenever generating migration scripts, always follow rules in @file ./postgres-migrations.mdc
+- Whenever generating migration scripts, always follow rules in @file ./Postgres-Migrations.mdc
 
 ### Security Policies
-- Whenever row-level security is needed, always follow rules in @file ./postgres-rls-policies.mdc
+- Whenever row-level security is needed, always follow rules in @file ./Postgres-RLS-Policies.mdc
 
 ### SQL
-Whenever generating SQL statements, always follow rules in @file ./postgres-sql-style.mdc
+Whenever generating SQL statements, always follow rules in @file ./Postgres-SQL-Style.mdc

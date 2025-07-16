@@ -1,0 +1,8 @@
+---
+description: Guidelines for using Context7 to obtain the latest API and developer documentation.
+alwaysApply: false
+---
+
+- When generating code, always use Context7 via MCP to try and obtain the latest information relevant to the task.
+
+- Whenever a compiler error occurs, check Context7 via MCP to see if it can help resolve the error.

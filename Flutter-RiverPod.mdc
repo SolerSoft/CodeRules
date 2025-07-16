@@ -1,7 +1,6 @@
 ---
-description:
-globs:
-alwaysApply: true
+description: Best practices for working with Riverpod.
+globs: *.dart
 ---
 
 # Riverpod

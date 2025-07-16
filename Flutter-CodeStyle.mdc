@@ -1,7 +1,6 @@
 ---
-description: 
-globs: 
-alwaysApply: true
+description: Best practices for developing Flutter applications.
+globs: *.dart
 ---
 
 # Code
