@@ -1,0 +1,15 @@
+---
+description: Best practices for developing Snap Lenses with Lens Studio.
+globs: *.ts,*.tsx
+---
+# General
+- All code should be written in TypeScript. Any sample code written in JavaScript must be converted to TypeScript.
+
+# Code Style
+- Be sure to follow the style guidlines in @file ./TypeScript-CodeStyle.mdc.
+
+# APIs
+- When having difficulty generating code, use @file ./Context7.mdc to verify API signatures or determine which APIs to use.
+
+# Samples
+- Refer to the [Snapchat Spectacles Sample](https://github.com/Snapchat/Spectacles-Sample) repo on GitHub for recommended implementation patterns.

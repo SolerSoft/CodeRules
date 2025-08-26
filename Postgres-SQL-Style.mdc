@@ -132,3 +132,6 @@ select
 from employee_counts
 order by department_name;
 ```
+
+## Data Types
+- Prefer timestamptz over timestamp unless the user specifies a reason not to.

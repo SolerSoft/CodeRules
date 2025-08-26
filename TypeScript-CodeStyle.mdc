@@ -1,0 +1,66 @@
+---
+description: Best practices for formatting TypeScript code.
+globs: *.ts, *.tsx
+---
+
+# Code
+
+## Grouping and Sorting
+
+- When generating code, group members by type, then sort alphabetically.
+- When grouping members by type, use the following groups IN THIS ORDER:
+  - Private Constants
+  - Protected Constants
+  - Public Constants
+  - Private Variables
+  - Protected Variables
+  - Private Constructors
+  - Protected Constructors
+  - Public Constructors
+  - Private Methods
+  - Protected Methods
+  - Public Methods
+  - Private Properties
+  - Protected Properties
+  - Public Properties
+  - Private Events
+  - Protected Events
+  - Public Events
+
+## Nomenclature
+
+- Consider variables that are not private to be "Public Properties".
+- Consider variables that start with 'on' and are related to callbacks as "Events".
+- Consider properties that start with 'on' and are related to callbacks as "Events".
+
+## Regions
+
+- Always surround code groups with a matching named region.
+	- Regions should start with // #region \[GroupName\], for example: // #region \[Public Methods\]
+	- Regions should end with // #endregion \[GroupName\], for example: // #endregion \[Public Methods\]
+	- // #region \[GroupName\] statements should be followed by one blank line before code begins.
+	- // #endregion \[GroupName\] statements should be preceded by one blank line.
+- When asked to create regions, always use the group names identified in [Grouping and Sorting](mdc:#grouping-and-sorting).
+- When asked to create regions, do not create empty regions for groups that don't exist.
+	
+## Comments
+
+- Add standard // code comments inside method blocks where helpful to describe what the code is doing.
+- Add [JSDoc documentation comments](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) to all Methods, Properties and Events. 
+	- When adding comments, be sure to add them before any metadata annotations.
+	- When adding comments, if multiple lines are needed start with a summary line and include a blank line between the summary and remaining lines.
+	- When documenting methods always document and explain parameters.
+	
+## Imports
+
+- Imports should always be at the top of the file.
+- Imports should always be sorted alphabetically.
+- There should not be any blank lines between import statements.
+
+# Refactoring
+
+- When asked to apply MyCodeStyle :
+	- Create code groups
+	- Create regions
+	- Sort regions
+	- Add documentation code comments

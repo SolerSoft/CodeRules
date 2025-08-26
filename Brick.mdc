@@ -4,8 +4,20 @@ alwaysApply: false
 ---
 
 # Brick API
-
 - When generating Brick code always use @file ./Context7.mdc to validate the syntax with the 'getdutchie/brick' library.
 
 # Code Generation
 - Whenever a Model class is added or changed, we must run 'dart run build_runner build' from within the Brick project. This generates Adapters and Client Migrations.
+
+# Documentation
+- Documentation for Brick can be found at https://getdutchie.github.io/brick/#/offline_first/offline_first_with_supabase_repository
+
+# Associations
+- Brick supports the ability for a Model class to have a property that point to another Model class. This is called an Association.
+- Brick also supports the ability for a Model class to have a property that is a List of another Model class. This is also called an Association.
+- When using Association properties, Brick will determin the foreign key automatically. We should not need to annotate the property.
+- If we need to override the foreign key we can use the @Supabase annotation. For example, an 'address' property might be annotated with @Supabase(foreignKey: 'address_id'). However, we should only do this if we need to override the default.
+
+# Enums
+- By default, Brick assumes Enums will be serialized as ints but we DO NOT want this. We instead want to serialize Enums as Strings.
+- To serialize Enums as Strings we need to annotate Model properties that use Enums with @Supabase(enumAsString: true).
