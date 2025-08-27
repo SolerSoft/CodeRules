@@ -5,6 +5,11 @@ globs: *.ts, *.tsx
 
 # Code
 
+## Naming
+
+- Private variables should be prefixed with an underscore. For example: `private _someNumber: number`
+- When a private variable is exposed by a property, the property should have the same name as the private variable but without the underscore. For example: `public get someNumber(): number`
+
 ## Grouping and Sorting
 
 - When generating code, group members by type, then sort alphabetically.
@@ -30,17 +35,17 @@ globs: *.ts, *.tsx
 ## Nomenclature
 
 - Consider variables that are not private to be "Public Properties".
-- Consider variables that start with 'on' and are related to callbacks as "Events".
-- Consider properties that start with 'on' and are related to callbacks as "Events".
+- Consider public variables that start with 'on' and are related to callbacks as "Events".
+- Consider public properties that start with 'on' and are related to callbacks as "Events".
 
 ## Regions
 
 - Always surround code groups with a matching named region.
-	- Regions should start with // #region \[GroupName\], for example: // #region \[Public Methods\]
-	- Regions should end with // #endregion \[GroupName\], for example: // #endregion \[Public Methods\]
+	- Regions should start with // #region \[GroupName\], for example: `// #region \[Public Methods\]`
+	- Regions should end with // #endregion \[GroupName\], for example: `// #endregion \[Public Methods\]`
 	- // #region \[GroupName\] statements should be followed by one blank line before code begins.
 	- // #endregion \[GroupName\] statements should be preceded by one blank line.
-- When asked to create regions, always use the group names identified in [Grouping and Sorting](mdc:#grouping-and-sorting).
+- When asked to create regions, always use the group names identified in [Grouping and Sorting](#grouping-and-sorting).
 - When asked to create regions, do not create empty regions for groups that don't exist.
 	
 ## Comments
@@ -59,8 +64,8 @@ globs: *.ts, *.tsx
 
 # Refactoring
 
-- When asked to apply MyCodeStyle :
-	- Create code groups
-	- Create regions
-	- Sort regions
-	- Add documentation code comments
+- When asked to apply Code Style:
+	1. [Create code groups](#grouping-and-sorting)
+	1. [Create regions](#regions)
+	1. Sort regions using the [grouping and sorting rules](#grouping-and-sorting)
+	1. Add documentation using [code comments](#comments)
